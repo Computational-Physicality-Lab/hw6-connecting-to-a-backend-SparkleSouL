@@ -11,6 +11,7 @@ import CartPage from "./pages/CartPage/CartPage";
 import NotFound from "./pages/NotFound/NotFound";
 import ProductPage from "./pages/ProductPage/ProductPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
+import CreateFromPicturePage from "./pages/CreateFromPicturePage/CreateFromPicturePage";
 
 function App() {
 	return (
@@ -25,6 +26,7 @@ function App() {
 				<Route path="/not-found" element={<NotFound />} />
 				<Route path="/product/:name/:id" element={<ProductPage />} />
 				<Route path="/login" element={<LoginPage />} />
+				<Route path="/create-from-picture" element={<CreateFromPicturePage />} />
 			</Routes>
 
 			<Footer />
