@@ -13,7 +13,7 @@ const NavBar = (props) => {
 		<div>
 			<Nav className="Nav">
 				<Link to="/t-shirts">T-SHIRTS</Link>
-				<Link to="/not-found">CREATE FROM PICTURE</Link>
+				<Link to="/create-from-picture">CREATE FROM PICTURE</Link>
 				<Link to="/not-found">CREATE YOUR OWN</Link>
 				<Link to="/not-found">ABOUT US</Link>
 				<Link to="/login">

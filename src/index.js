@@ -8,6 +8,8 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ProductProvider } from "./context/ProductContext";
 import { CartProvider } from "./context/CartContext";
+import { AuthUserProvider } from "./context/AuthUserContext";
+import { PictureProductProvider } from "./context/PictureContext";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -38,14 +40,18 @@ export { auth, provider, firestore };
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
-		<BrowserRouter>
-			<ProductProvider>
-				<CartProvider>
-					<App />
-				</CartProvider>
-			</ProductProvider>
-		</BrowserRouter>
-	</React.StrictMode>
+    <BrowserRouter>
+      <ProductProvider>
+        <PictureProductProvider>
+          <AuthUserProvider>
+            <CartProvider>
+              <App />
+            </CartProvider>
+          </AuthUserProvider>
+        </PictureProductProvider>
+      </ProductProvider>
+    </BrowserRouter>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
