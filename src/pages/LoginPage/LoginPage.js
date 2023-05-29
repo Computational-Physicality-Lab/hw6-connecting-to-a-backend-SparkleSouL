@@ -33,14 +33,12 @@ const handleSignIn = (setLoading, navigate) => {
 
 
 const handleSignOut = (navigate) => {
-  if (window.confirm("Are you sure you want to log out?")) {
     signOut(auth)
       .then(() => {
         console.log("signed out");
         navigate("/");
       })
       .catch((error) => {});
-  }
 };
 
 
