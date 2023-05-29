@@ -105,9 +105,9 @@ const SearchSection = (props) => {
       </div>
 
       {searchResults.length === 0 && (
-        <h2 style={{ color: "#ac2432", fontStyle: "italic" }}>
+        <h1 style={{ color: "#ac2432"}}>
           No search results. Maybe use a Scotty?
-        </h2>
+        </h1>
       )}
 
       <div className="searchImages" ref={scrollableRef}>

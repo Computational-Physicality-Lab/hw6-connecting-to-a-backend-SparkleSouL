@@ -46,11 +46,6 @@
 .searchImages img {
   max-height: 100%;
 }
-.searchImages button:hover,
-.searchImages button:active,
-.searchImages button:active:after {
-  background-color: rgb(238, 238, 238) !important;
-}
 .searchImages img {
   width: 100%;
 }

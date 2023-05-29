@@ -64,7 +64,7 @@ const ProductSection = (props) => {
         height={400}
         style={{ backgroundColor: "rgb(238, 238, 238)" }}
       />
-      <h2 style={{ color: "#ac2432" }}>$20.00</h2>
+      <h3 style={{ color: "#ac2432" }}>$20.00</h3>
       <QuantityList />
       <SizeList />
       <AddCartBtn />
