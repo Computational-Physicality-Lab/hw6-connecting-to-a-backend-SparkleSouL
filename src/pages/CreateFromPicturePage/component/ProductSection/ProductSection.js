@@ -54,7 +54,7 @@ const ProductSection = (props) => {
         };
       }
     };
-  }, [currentChoose, setPictureProductState, pictureProductState]);
+  }, [currentChoose]);
 
   return (
     <div className="productSection">
