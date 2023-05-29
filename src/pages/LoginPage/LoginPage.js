@@ -51,7 +51,7 @@ const LoginPage = () => {
   return (
     <div className="loginPage">
       {loading ? (
-        <Spinner color="danger" />
+        <Spinner/>
       ) : (
         <>
           {authUser ? (
@@ -65,7 +65,6 @@ const LoginPage = () => {
           ) : (
             <Button
               outline
-              color="danger"
               onClick={() => handleSignIn(setLoading, navigate)}
             >
               <img
@@ -73,7 +72,7 @@ const LoginPage = () => {
                 style={{ width: "30px", marginRight: "5px" }}
                 alt="Google Logo"
               />
-              <span>Log In with Google</span>
+              <span>Log In</span>
             </Button>
           )}
         </>
