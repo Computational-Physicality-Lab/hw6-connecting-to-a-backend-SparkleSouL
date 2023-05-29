@@ -4,6 +4,7 @@ export const ProductContext = createContext();
 
 export const ProductProvider = ({ children }) => {
 	const [productState, setProductState] = useState({
+		type: "product",
 		side: null,
 		color: null,
 		openQty: false,
@@ -14,6 +15,7 @@ export const ProductProvider = ({ children }) => {
 		name: null,
 		price: null,
 		id: null,
+		img: null,
 	});
 
 	return (

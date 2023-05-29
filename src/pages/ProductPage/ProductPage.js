@@ -32,6 +32,7 @@ const ProductPage = () => {
 	useEffect(() => {
 		setProductState((prevState) => ({
 			...prevState,
+			type: "product",
 			side: firstSide,
 			color: firstClr,
 			name: name,
@@ -45,6 +46,7 @@ const ProductPage = () => {
 		return () => {
 			setProductState((prevState) => ({
 				...prevState,
+				type: "product",
 				side: null,
 				color: null,
 				name: null,

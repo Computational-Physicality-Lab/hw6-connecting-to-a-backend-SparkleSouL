@@ -64,7 +64,6 @@ const SearchSection = (props) => {
 
   const handleSubmit = async (e) => {
     if (search === "") {
-      alert("Please enter something");
       return;
     }
     e.preventDefault();
@@ -113,7 +112,7 @@ const SearchSection = (props) => {
 
       <div className="searchImages" ref={scrollableRef}>
         {loading ? (
-          <Spinner color="danger" />
+          <Spinner />
         ) : searchResults.length === 0 ? (
           scotties.map((scotty, index) => (
             <Button
